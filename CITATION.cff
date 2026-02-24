@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Non-Actionable Risk Display Feasibility"
+authors:
+  - family-names: "Nlemadim"
+    given-names: "Victory"
+repository-code: "https://github.com/Lemasvicker/non-actionable-risk-display-feasibility"
+license: "Apache-2.0"
+abstract: "Feasibility metrics, schemas, and validation utilities for non-actionable risk display workflows in digital health (non-proprietary)."
+keywords:
+  - "digital health"
+  - "feasibility"
+  - "workflow"
+  - "human-in-the-loop"
+  - "validation"
