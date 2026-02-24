@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Non-Actionable Risk Display Feasibility Log",
+  "type": "object",
+  "required": ["session_id", "created_utc", "system", "metrics"],
+  "properties": {
+    "session_id": { "type": "string", "minLength": 3 },
+    "created_utc": { "type": "string", "format": "date-time" },
+    "site": { "type": "string" },
+    "system": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "metrics": {
+      "type": "object",
+      "required": ["uptime_fraction", "median_latency_ms", "data_yield_fraction"],
+      "properties": {
+        "uptime_fraction": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "median_latency_ms": { "type": "number", "minimum": 0.0 },
+        "data_yield_fraction": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "ack_rate_fraction": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
