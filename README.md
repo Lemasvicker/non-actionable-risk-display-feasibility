@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1165656531.svg)](https://doi.org/10.5281/zenodo.18757623)
+
 # Non-Actionable Risk Display Feasibility
 
 Feasibility metrics, schemas, and a minimal validator for **non-actionable** risk display workflows in digital health (non-proprietary).
